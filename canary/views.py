@@ -11,7 +11,7 @@ def tell(request,line):
 	return render(request, 'canary/tell.html', {'line':line})
 
 def index(request):
-	return tell(request,"Damien","a raison")
+	return tell(request,"Welcome")
 
 def r13(request,line):
 	return tell(request,line.encode("rot13"))
