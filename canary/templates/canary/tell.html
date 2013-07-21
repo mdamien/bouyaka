@@ -5,10 +5,44 @@
     <head>
         <meta charset="utf-8"> 
         <title>Canary</title>
-</head> 
+</head>
+<style>
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#page-table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+#page-td {
+    height: 100%;
+    padding: 0;
+    vertical-align: middle;
+}
+</style>
 <body>
-<div style="text-align:center">
-<h1 style="vertical-align:middle;height:100%">{{ name }} {{ line }}</h1>
-</div>
+<table id="page-table"><tr><td id="page-td">
+    <td id="page-td" style="
+    background-color: black;
+">
+    <div id="global">
+        <h1 style="
+    padding: 10px;
+    font-size: 10em;
+    color: white;
+    /* text-decoration: underline; */
+    margin: 46px;
+    border: 15px solid;
+">{{ name }} {{ line }}</h1>
+    </div>
+</td>
+</td></tr></table>
 </body>
 </html>
