@@ -4,3 +4,9 @@ def tell(request,name,line):
 	name = name.title()
 	line = line.replace('_',' ')
 	return render(request, 'canary/tell.html', {'name':name,'line':line})
+
+def shorttell(request,line):
+	return tell(request,"Damien",line)
+
+def index(request):
+	return tell(request,"Damien","a raison")
