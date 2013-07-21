@@ -10,8 +10,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^$', views.index),
-    url(r'^(?P<line>\S+)/$', views.shorttell),
-    url(r'^(?P<name>\S+)/(?P<line>\S+)', views.tell),
-    url(r'^/tell/(?P<name>\S+)/(?P<line>\S+)', views.tell),
-    url(r'^/dit/(?P<name>\S+)/(?P<line>\S+)', views.tell),
+    url(r'^r/(?P<line>\S+)', views.r13),
+    url(r'^(?P<line>\S+)', views.tell),
 )
